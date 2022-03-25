@@ -1,0 +1,91 @@
+.btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    transition: 1s;
+}
+
+.link  {
+    background-color: red;
+    padding: 7px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+.link:hover {
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    transition: 1s;
+}
+.input {
+    border: 1px solid red;
+    padding: 7px;
+    outline: none;
+    width: 30%;
+}
+.input::placeholder {
+    color: red;
+}
+
+.image {
+    border: 1px solid red;
+    height: 70vh;
+    width: 50%;
+    position: relative;
+}
+.img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    transform: translate(300px, 50px);
+    animation-name: schoolgirl;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes schoolgirl {
+    0% {
+        transform: translate(-1000px, -500px);
+        /* opacity: 0; */
+    }
+
+    50% {
+        /* opacity: 0; */
+    }
+
+    100% {
+        transform: translate(300px, 50px);
+    }
+}
+
+
+.laptop {
+    height: 200px;
+    transform: translate(0px, 300px);
+    animation-name: laptop;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes laptop {
+    from {
+        transform: translate(1200px, -700px) rotate(60deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translate(0px, 300px);
+        opacity: 1;
+    }
+}
